@@ -47,12 +47,12 @@
       <f:optionalBlock name="dynamic" title="Show full configuration">
         <h5>Flags</h5>
         <!--Large text blocks have problems with f:textarea. Just use textarea directly.-->
-        <textarea readonly="true" rows="25" class="codemirror setting-input" style="width: 100%" codemirror-mode="javascript" codemirror-config="json:true, lineNumbers:true">
+        <textarea readonly="true" rows="25" class="codemirror setting-input" style="width: 100%" codemirror-mode="javascript" codemirror-config='"json":true, "lineNumbers":true'>
           ${it.rawFlags}
         </textarea>
 
         <h5>Target Groups</h5>
-        <textarea readonly="true" rows="25" class="codemirror setting-input" style="width: 100%" codemirror-mode="javascript" codemirror-config="json:true, lineNumbers:true">
+        <textarea readonly="true" rows="25" class="codemirror setting-input" style="width: 100%" codemirror-mode="javascript" codemirror-config='"json":true, "lineNumbers":true'>
           ${it.rawTargetGroups}
         </textarea>
       </f:optionalBlock>
@@ -92,7 +92,7 @@
       <div style="display: none;">
         <!--        HACK - render a f:textarea to make the basic textarea work. 🤷
                     Without this, the textarea used above doesn't seem to apply the correct javascript styling-->
-        <f:textarea value="" readonly="true" codemirror-mode="javascript" codemirror-config="json:true, lineNumbers:true"/>
+        <f:textarea value="" readonly="true" codemirror-mode="javascript" codemirror-config='"json":true, "lineNumbers":true'/>
       </div>
 
       <st:adjunct includes="com.cloudbees.fm.jenkins.FeatureManagementConfigurationAction.cbfm" />
